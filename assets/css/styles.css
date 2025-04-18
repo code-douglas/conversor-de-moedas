@@ -14,6 +14,7 @@ main {
   background: #f4f4f4;
   margin: 0 auto;
   margin-top: 100px;
+  height: 780px;
 }
 
 header {
@@ -31,9 +32,12 @@ header h1 {
   padding-top: 25px;
 }
 
-.select-to-convert, 
+.select-to-convert {
+  padding: 10px 24px 10px;
+}
+
 .convert-result {
-  padding: 24px;
+  margin: 0 24px 24px;
 }
 
 .select-to-convert label {
@@ -91,4 +95,34 @@ header h1 {
 
 .select-to-convert button:active {
   opacity: 0.7;
+}
+
+.convert-result {
+  border: 1px solid #1B83E2;
+  border-radius: 4px;
+}
+
+
+.convert-container {
+  text-align: center;
+  padding: 10px;
+}
+
+.currency-coin {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #777777;
+}
+
+.currency-coin-result {
+  color: #1B83E2;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.arrow-image {
+  display: block;
+  margin: 15px auto;
 }
