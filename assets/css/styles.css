@@ -4,3 +4,29 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
+body {
+  background: #E5E5E5;
+}
+
+main {
+  width: 375px;
+  background: #f4f4f4;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+header {
+  background: #1B83E2;
+  height: 66px;
+}
+
+header h1 {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 18px;
+  color: #F4F4F4;
+  text-align: center;
+  padding-top: 25px;
+}
