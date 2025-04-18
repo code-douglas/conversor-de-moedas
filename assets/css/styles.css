@@ -108,6 +108,10 @@ header h1 {
   padding: 10px;
 }
 
+.convert-container img { 
+  height: 44px;
+}
+
 .currency-coin {
   font-style: normal;
   font-weight: normal;

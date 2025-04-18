@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/styles.css">
   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <script src="assets/js/index.js" defer></script>
   <title>Conversor de moeda.</title>
 </head>
 <body>
@@ -18,41 +19,44 @@
     <section class="select-to-convert">
       <label>
         Converter <span>de:</span>
-        <select name="" id="">
-          <option value="">R$ Real Brasileiro</option>
+        <select>
+          <option value="real">R$ Real Brasileiro</option>
         </select>
       </label>
 
       <label>
         Converter <span>para:</span>
-        <select name="" id="">
-          <option value="">U$ Dolar americano</option>
-          <option value="">€ Euro</option>
+        <select id="select-coin">
+          <option value="dolar" id="dolar">U$ Dolar americano</option>
+          <option value="euro" id="euro">€ Euro</option>
+          <option value="bitcoin" id="bitcoin">Bitcoin</option>
         </select>
       </label>
       
       <label>
         Valor:
-        <input type="number" placeholder="R$ 10.000,00">
+        <input type="number" placeholder="R$ 10.000,00" id="input-real">
       </label>
 
-      <button type="button">Converter</button>
+      <button type="button" id="convert-button">Converter</button>
 
     </section>
     <section class="convert-result">
+      
       <div class="convert-container">
         <img src="./assets/images/brasil.svg" alt="bandeira do brasil">
-        <p class="currency-coin">Real</p>
-        <p class="currency-coin-result">R$ 10.000</p>
+        <p class="currency-coin" id="convert-to">Real</p>
+        <p class="currency-coin-result" id="value-for-convert">R$ 10.000</p>
       </div>
 
       <img class="arrow-image" src="./assets/images/arrow.png" alt="seta para baixo">
 
       <div class="convert-container">
-        <img src="./assets/images/eua.svg" alt="bandeira do estados unidos">
-        <p class="currency-coin">Dólar americano</p>
-        <p class="currency-coin-result">R$ 10.000</p>
+        <img src="./assets/images/eua.svg" alt="bandeira do estados unidos" id="change-image">
+        <p class="currency-coin" id="convert-result-coin"></p>
+        <p class="currency-coin-result" id="convert-result-value"></p>
       </div>
+
     </section>
   </main>
 </body>
