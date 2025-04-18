@@ -7,9 +7,53 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
   <title>Conversor de moeda.</title>
 </head>
 <body>
-  
+  <main class="container">
+    <header>
+      <h1>Conversor de Moedas</h1>
+    </header>
+    <section>
+      <label>
+        Converter <span>de:</span>
+        <select name="" id="">
+          <option value="">R$ Real Brasileiro</option>
+        </select>
+      </label>
+
+      <label>
+        Converter <span>para:</span>
+        <select name="" id="">
+          <option value="">U$ Dolar americano</option>
+          <option value="">€ Euro</option>
+        </select>
+      </label>
+      
+      <label>
+        Valor:
+        <input type="number" placeholder="R$ 10.000,00">
+      </label>
+
+      <button type="button">Converter</button>
+
+    </section>
+    <section>
+      <div>
+        <img src="./assets/images/brasil.svg" alt="bandeira do brasil">
+        <p>Real</p>
+        <p>R$ 10.000</p>
+      </div>
+
+      <img src="./assets/images/arrow.png" alt="seta para baixo">
+      
+      <div>
+        <img src="./assets/images/eua.svg" alt="bandeira do estados unidos">
+        <p>Dólar americano</p>
+        <p>R$ 10.000</p>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
